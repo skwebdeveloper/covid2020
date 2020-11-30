@@ -1,0 +1,26 @@
+.card__header{
+    background-color: #00162c;
+    display: grid;
+    width: 95%;
+    padding: 10px 10px;
+    min-height: 250px;
+    border-radius: 10px;
+    /* margin-left: 10px; */
+    margin: 20px;
+    color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);   
+}
+
+.card__header > h3{
+     font-size: 25px;
+}
+
+
+@media only screen and (min-width: 50%) {
+  .card__header{
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+

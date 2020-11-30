@@ -1,0 +1,24 @@
+.table__head{
+    margin: 0 auto;
+    overflow: scroll;
+    height: 600px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.table__head > tr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.table__head > td{
+    padding: 0.5rem;
+    
+}
+
+.table__head tr:nth-of-type(odd){
+    background-color: #3c00AD;
+}
+

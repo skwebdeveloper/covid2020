@@ -1,0 +1,13 @@
+.map__head{
+    height: 500px;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #00162c;    
+}
+
+.map__head .leaflet-container{
+    height: 100%;
+}
+
+
+

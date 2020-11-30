@@ -1,0 +1,31 @@
+.util__popup{
+    display: flex;
+    color: #00162c;
+    border-radius: 10px;
+}
+
+.util__image{
+    height: 80px;
+    width: 100%;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.util__container{
+margin: 0 auto;
+color: #00162c;
+
+}
+
+.util__name{
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.util__cases, .util__deaths, .util__recovery{
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
