@@ -13,9 +13,7 @@ const Map = ({countries, casesType, center, zoom}) => {
           contributors'
         />
         { ShowDataOnMap(countries, casesType) } 
-
-
-      </MapContainer>   
+        </MapContainer>   
         </div>
     )
 }

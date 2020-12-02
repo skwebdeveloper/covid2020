@@ -13,12 +13,10 @@ body{
 }
 
 .left__side{
-  /* background-color: red; */
   display: grid;
 }
 
 .right__side{
-  /* background-color: yellow; */
   width: auto;
   display: grid;
   grid-template-columns: 100%;
@@ -38,13 +36,13 @@ body{
   }
 }
 
+/* DROPDOWN  */
 
 .first__dropdown{
     display: flex;
     flex-direction: row;
     margin: 0 auto;
   }
-
 .app__dropdown{
   width: 100%;
 }
@@ -53,26 +51,32 @@ body{
   color: #3c00ad;
   font-size: 20px;
 }
-
 .header__menuitem{
+  color:white;
+  font-weight:800;
+  letter-spacing:1px;
   font-size: 20px;
-  letter-spacing: 1px;
 }
+
+/* FIRST ROW */
 
 .first__row{
   margin: 5px;
   padding: 16px 32px;
 }
-
 .first__heading{
   font-size: 60px;
 }
+
+/* SECOND ROW */
 
 .second__row{
   display: grid;
   grid-template-columns: 80% 20%;
   margin-top: 2%;
 }
+
+/* CARDS */
 
 .app__cards{
   display: grid;
@@ -84,17 +88,34 @@ body{
   .app__cards{
     grid-template-columns: 100%;
   }
+  .second__row{
+    display: grid;
+    grid-template-columns: 90%;
+    z-index: 2;
+  }
 }
 
+/* THIRD ROW  */
 .third__row{
   display: grid;
   grid-template-columns: 100%;
   margin-top: 2%;
+
 }
 
+/* TABLE  */
 .table{
       background-color: #00162c;
       margin-top: 5px;
       color: white;
       border-radius: 5px;
+}
+
+
+.continent__name__decor{
+     font-size: 10vw;
+     z-index: 1;
+     opacity: 0.5;
+     margin: 0 auto;
+     transition: 1s;
 }

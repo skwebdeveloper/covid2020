@@ -2,10 +2,9 @@
 // TOOLTIP
 import React from "react";
 import { Circle, Popup } from "react-leaflet";
-import numeral from "numeral";
-
 import "./util.css";
 
+// Colors selection if you want to make it more attractive
 const ColorType = {
     cases:{
         hex: "#CC1034",   
@@ -21,13 +20,14 @@ const ColorType = {
     },
 }; 
 
-
+// Show circle
 export const ShowDataOnMap = (data, casesType = 'cases') =>(
     data.map(country =>(
         <Circle
         center = {[country.countryInfo.lat, country.countryInfo.long]}
         fillOpacity={0.4}
-        color={ColorType[casesType].hex}
+        color='#3c00ad'
+        // Radius Fucntion is not enabled for now because of some Issue
         radius={
             Math.sqrt(country[casesType])* ColorType[casesType].multiplier
         }>
@@ -40,16 +40,23 @@ export const ShowDataOnMap = (data, casesType = 'cases') =>(
             <div className="util__deaths">Deaths - {country.deaths}</div>
         </div>
         </Popup>
-
         </Circle>
     ))
 );
 
 
-// EARLY NUMBERS 
-
-export const startingnumber = (stat) =>
-    stat ? `${numeral(stat).format("0,0a")}` : 'Loading'
+// SORT TABLE 
+export const sortTabled = (data) =>{
+    let sortedTabled = [...data];
+    sortedTabled.sort((a,b) =>{
+    if(a.cases > b.cases){ 
+        return -1;
+    }
+    else{
+        return 1;
+    }});
+return sortedTabled;
+}; 
 
 
 

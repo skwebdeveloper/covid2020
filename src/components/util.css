@@ -1,11 +1,11 @@
 .util__popup{
-    display: flex;
+    display: grid;
     color: #00162c;
     border-radius: 10px;
 }
 
 .util__image{
-    height: 80px;
+    height: 120px;
     width: 100%;
     background-size: cover;
     border-radius: 8px;
